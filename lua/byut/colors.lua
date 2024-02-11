@@ -29,6 +29,26 @@ vim.api.nvim_create_autocmd("ColorScheme", {
             return
         end
 
+        -- Remove background colors
+        for _, group_name in ipairs({
+            "Normal",
+            "NormalNC",
+            "CursorLineNr",
+            "CursorLineSign",
+            "CursorLineFold",
+            "SignColumn",
+            "EndOfBuffer",
+            "LineNr",
+            "NonText",
+        }) do
+            vim.cmd(
+                string.format(
+                    "highlight %s guibg=NONE ctermbg=NONE",
+                    group_name
+                )
+            )
+        end
+
         local file = io.open(vim.fn.stdpath("data") .. "/color", "w")
         if not file then
             return
