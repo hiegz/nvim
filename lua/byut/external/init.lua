@@ -12,7 +12,9 @@ if not (os.rename(lazypath, lazypath) and true or false) then
 end
 
 local config = { ui = { border = "single" } }
-local plugins = {}
+local plugins = {
+    require("byut.external.mason"),
+}
 
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(plugins, config)
