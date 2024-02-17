@@ -40,6 +40,14 @@ keymap("n", "<C-r>", ":nohlsearch<CR>", opts)
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
+-- Format code
+keymap("n", "<leader>af", function()
+    local ok, conform = pcall(require, "conform")
+    if ok then
+        conform.format()
+    end
+end, opts)
+
 -- Search for pattern in the current working directory
 keymap("n", "<leader>qe", function()
     local expr = vim.fn.input("Search pattern: ")
