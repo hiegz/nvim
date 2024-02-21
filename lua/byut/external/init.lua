@@ -13,6 +13,7 @@ end
 
 local config = { ui = { border = "single" } }
 local plugins = {
+    require("byut.external.cmp"),
     require("byut.external.mason"),
     require("byut.external.conform"),
 }
