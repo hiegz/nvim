@@ -14,6 +14,7 @@ return {
                 python = { "black" },
                 rust = { "rustfmt" },
                 go = { "gofmt" },
+                sh = { "shfmt" },
                 lua = { "stylua" },
                 ["_"] = { "trim_whitespace" },
             },
