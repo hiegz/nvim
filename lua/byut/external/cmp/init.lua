@@ -4,7 +4,7 @@ return {
         local cmp = require("cmp")
         cmp.setup({
             mapping = cmp.mapping.preset.insert({
-                ["<CR>"] = cmp.mapping.confirm({ select = true }),
+                ["<CR>"] = cmp.mapping.confirm({ select = false }),
                 ["<C-n>"] = function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
