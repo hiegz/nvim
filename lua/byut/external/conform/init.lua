@@ -11,6 +11,8 @@ return {
                 markdown = { { "mdformat", "prettierd", "prettier" } },
                 javascript = { { "prettierd", "prettier" } },
                 typescript = { { "prettierd", "prettier" } },
+                jsonc = { { "prettierd", "prettier" } },
+                json = { { "prettierd", "prettier" } },
                 python = { "black" },
                 rust = { "rustfmt" },
                 go = { "gofmt" },
