@@ -23,6 +23,7 @@ return {
             sources = cmp.config.sources({
                 { name = "path" },
                 { name = "nvim_lsp" },
+                { name = "nvim_lua" },
                 { name = "buffer" },
             }),
         })
@@ -31,5 +32,6 @@ return {
         "hrsh7th/cmp-buffer",
         "hrsh7th/cmp-path",
         "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-nvim-lua",
     },
 }
