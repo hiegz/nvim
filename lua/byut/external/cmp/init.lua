@@ -21,10 +21,10 @@ return {
                 end,
             }),
             sources = cmp.config.sources({
-                { name = "path" },
-                { name = "nvim_lsp" },
-                { name = "nvim_lua" },
-                { name = "buffer" },
+                { name = "path", priority = 4 },
+                { name = "nvim_lsp", priority = 3 },
+                { name = "nvim_lua", priority = 2 },
+                { name = "buffer", priority = 1 },
             }),
         })
     end,
