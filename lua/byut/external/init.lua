@@ -16,6 +16,7 @@ local plugins = {
     require("byut.external.cmp"),
     require("byut.external.mason"),
     require("byut.external.conform"),
+    require("byut.external.lspconfig"),
 }
 
 vim.opt.rtp:prepend(lazypath)
