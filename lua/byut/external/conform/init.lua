@@ -13,6 +13,7 @@ return {
                 typescript = { { "prettierd", "prettier" } },
                 jsonc = { { "prettierd", "prettier" } },
                 json = { { "prettierd", "prettier" } },
+                yaml = { "yamlfmt" },
                 python = { "black" },
                 rust = { "rustfmt" },
                 go = { "gofmt" },
