@@ -11,7 +11,7 @@ vim.opt.belloff = "all"
 vim.opt.clipboard = "unnamed,unnamedplus"
 vim.opt.syntax = "on"
 
-vim.opt.spell = true
+vim.opt.spell = false
 vim.opt.spelllang = "en,de"
 
 vim.opt.encoding = "utf-8"
