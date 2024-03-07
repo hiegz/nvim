@@ -40,6 +40,11 @@ keymap("n", "<C-r>", ":nohlsearch<CR>", opts)
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
+-- Toggle spellchecking
+keymap("n", "<leader>ss", function()
+    vim.opt.spell = not vim.opt.spell._value
+end, opts)
+
 -- Format code
 keymap("n", "<leader>af", function()
     local ok, conform = pcall(require, "conform")
