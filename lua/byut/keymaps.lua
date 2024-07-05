@@ -30,8 +30,9 @@ keymap("n", "<S-l>", ":tabnext<CR>", opts)
 -- and keep the cursor in the same place
 keymap("n", "J", "mzJ`z", opts)
 
--- Jump to the previous buffer
-keymap("n", "<C-o>", "<C-^>", opts)
+-- Jump up and down the tag stack
+keymap("n", "<C-o>", ":pop<CR>", opts)
+keymap("n", "<C-i>", ":tag<CR>", opts)
 
 -- Stop the highlighting for the `hlsearch` option
 keymap("n", "<C-r>", ":nohlsearch<CR>", opts)
