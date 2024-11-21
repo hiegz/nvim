@@ -21,6 +21,7 @@ return {
             "bashls",
             "clangd",
             "hls",
+            "texlab",
         }
 
         -- This should install all the servers listed above

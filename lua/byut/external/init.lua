@@ -18,6 +18,7 @@ local plugins = {
     require("byut.external.conform"),
     require("byut.external.lspconfig"),
     require("byut.external.telescope"),
+    require("byut.external.vimtex"),
 }
 
 vim.opt.rtp:prepend(lazypath)
