@@ -20,6 +20,7 @@ return {
                 go = { "gofmt" },
                 sh = { "shfmt" },
                 lua = { "stylua" },
+                zig = { "zigfmt" },
                 ["_"] = { "trim_whitespace" },
             },
         })
