@@ -22,6 +22,7 @@ return {
             "clangd",
             "hls",
             "texlab",
+            "zls",
         }
 
         -- This should install all the servers listed above
