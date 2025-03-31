@@ -1,6 +1,9 @@
 return {
     "neovim/nvim-lspconfig",
     config = function()
+        -- setup jdtls (nvim-java)
+        require("java").setup()
+
         local server_opts = {}
 
         local lspconfig = require("lspconfig")
@@ -23,6 +26,7 @@ return {
             "hls",
             "texlab",
             "zls",
+            "jdtls",
         }
 
         -- This should install all the servers listed above
@@ -72,5 +76,6 @@ return {
         "hrsh7th/nvim-cmp",
         "hrsh7th/cmp-nvim-lsp",
         "williamboman/mason-lspconfig.nvim",
+        "nvim-java/nvim-java",
     },
 }
