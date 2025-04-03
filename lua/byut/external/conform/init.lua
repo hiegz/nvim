@@ -6,6 +6,7 @@ return {
                 asm = { "asmfmt" },
                 c = { "clang_format" },
                 cpp = { "clang_format" },
+                java = { "clang_format" },
                 -- cmake = { "cmake_format" },
                 haskell = { "fourmolu", "ormolu" },
                 markdown = { "mdformat", "prettierd", "prettier" },
