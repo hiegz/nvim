@@ -12,7 +12,7 @@ return {
 
         -- List of LSP servers to install and configure
         local servers = {
-            "tsserver",
+            "ts_ls",
             "cssmodules_ls",
             "rust_analyzer",
             "pyright",
