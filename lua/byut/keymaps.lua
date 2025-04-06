@@ -46,14 +46,6 @@ keymap("n", "<leader>ss", function()
     vim.opt.spell = not vim.opt.spell._value
 end, opts)
 
--- Format code
-keymap("n", "<leader>af", function()
-    local ok, conform = pcall(require, "conform")
-    if ok then
-        conform.format()
-    end
-end, opts)
-
 -- Search for pattern in the current working directory
 keymap("n", "<leader>qe", function()
     local expr = vim.fn.input("Search pattern: ")
