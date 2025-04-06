@@ -1,7 +1,5 @@
 return {
     "williamboman/mason.nvim",
-    priority = 1000,
-    lazy = false,
     config = function()
         require("mason").setup({
             log_level = vim.log.levels.WARN,
