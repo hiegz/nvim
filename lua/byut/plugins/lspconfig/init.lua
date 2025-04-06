@@ -60,7 +60,7 @@ return {
         -- Configure installed servers
         for _, server in ipairs(servers) do
             local opts_status, opts =
-                pcall(require, "byut.external.lspconfig.settings." .. server)
+                pcall(require, "byut.plugins.lspconfig.settings." .. server)
             if opts_status then
                 server_opts = vim.tbl_deep_extend("force", opts, server_opts)
             end

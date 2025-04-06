@@ -1,5 +1,5 @@
 require("byut.options")
 require("byut.keymaps")
-require("byut.external")
+require("byut.plugins")
 require("byut.colors")
 require("byut.wsl")
