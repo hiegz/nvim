@@ -13,13 +13,13 @@ end
 
 local config = { ui = { border = "single" } }
 local plugins = {
-    require("byut.external.cmp"),
-    require("byut.external.mason"),
-    require("byut.external.conform"),
-    require("byut.external.lspconfig"),
-    require("byut.external.telescope"),
-    require("byut.external.vimtex"),
-    require("byut.external.cord"),
+    require("byut.plugins.cmp"),
+    require("byut.plugins.mason"),
+    require("byut.plugins.conform"),
+    require("byut.plugins.lspconfig"),
+    require("byut.plugins.telescope"),
+    require("byut.plugins.vimtex"),
+    require("byut.plugins.cord"),
 }
 
 vim.opt.rtp:prepend(lazypath)
