@@ -1,6 +1,9 @@
 return {
     settings = {
         Lua = {
+            runtime = {
+                pathStrict = true,
+            },
             diagnostics = {
                 globals = { "vim" },
             },
