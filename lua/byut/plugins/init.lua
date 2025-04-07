@@ -17,6 +17,7 @@ local plugins = {
     require("byut.plugins.mason"),
     require("byut.plugins.conform"),
     require("byut.plugins.lspconfig"),
+    require("byut.plugins.nvim-jdtls"),
     require("byut.plugins.telescope"),
     require("byut.plugins.vimtex"),
     require("byut.plugins.cord"),
