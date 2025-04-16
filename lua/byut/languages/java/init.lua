@@ -1,5 +1,6 @@
 local mason_registry = require("mason-registry")
 local nvim_jdtls = require("jdtls")
+local conform = require("conform")
 
 local lsp = mason_registry.get_package("jdtls")
 
@@ -78,6 +79,7 @@ local function setup_lsp()
         desc = "Setup jdtls",
         callback = setup_jdtls,
     })
+    conform.formatters_by_ft["java"] = { lsp_format = "fallback" }
 end
 
 if not lsp:is_installed() then
