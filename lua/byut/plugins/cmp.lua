@@ -27,9 +27,10 @@ return {
                 end,
             }),
             sources = cmp.config.sources({
-                { name = "path", priority = 4 },
-                { name = "nvim_lsp", priority = 3 },
-                { name = "nvim_lua", priority = 2 },
+                { name = "path", priority = 5 },
+                { name = "nvim_lsp", priority = 4 },
+                { name = "nvim_lua", priority = 3 },
+                { name = "luasnip", priority = 2 },
                 { name = "buffer", priority = 1 },
             }),
         })
@@ -40,5 +41,6 @@ return {
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-nvim-lua",
         "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
     },
 }
