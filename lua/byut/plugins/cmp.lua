@@ -12,11 +12,12 @@ return {
             },
             mapping = {
                 ["<CR>"] = cmp.mapping(function(fallback)
-                    if cmp.visible() then
+                    if cmp.get_active_entry() then
                         cmp.confirm({ select = false })
                     elseif luasnip.expand_or_jumpable() then
                         luasnip.expand_or_jump()
                     else
+                        cmp.abort()
                         fallback()
                     end
                 end, { "i" }),
