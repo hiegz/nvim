@@ -5,6 +5,10 @@ return {
         local luasnip = require("luasnip")
 
         cmp.setup({
+            preselect = cmp.PreselectMode.Item,
+            completion = {
+                completeopt = "menu,menuone,preview",
+            },
             snippet = {
                 expand = function(args)
                     luasnip.lsp_expand(args.body)
