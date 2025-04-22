@@ -6,6 +6,9 @@ local function setup_lsp()
     local server_opts = {}
     server_opts.on_attach = require("byut.defaults.lsp").on_attach
     server_opts.capabilities = require("byut.defaults.lsp").capabilities()
+    server_opts.root_dir = function(pattern)
+        return vim.uv.cwd()
+    end
 
     lspconfig["intelephense"].setup(server_opts)
 end
