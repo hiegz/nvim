@@ -21,6 +21,7 @@ local plugins = {
     require("byut.plugins.telescope"),
     require("byut.plugins.vimtex"),
     require("byut.plugins.cord"),
+    require("byut.plugins.everforest"),
 }
 
 vim.opt.rtp:prepend(lazypath)
