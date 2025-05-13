@@ -1,4 +1,3 @@
-local mason_registry = require("mason-registry")
 local lspconfig = require("lspconfig")
 local conform = require("conform")
 
@@ -23,20 +22,10 @@ local function on_attach(client, bufnr)
     require("byut.defaults.lsp").on_attach(client, bufnr)
 end
 
-local function setup_lsp()
-    local server_opts = {}
-    server_opts.on_attach = on_attach
-    server_opts.capabilities = require("byut.defaults.lsp").capabilities()
-
-    lspconfig["rust_analyzer"].setup(server_opts)
-end
-
-local lsp = mason_registry.get_package("rust-analyzer")
-if not lsp:is_installed() then
-    lsp:install():on("closed", vim.schedule_wrap(setup_lsp))
-else
-    setup_lsp()
-end
+lspconfig["rust_analyzer"].setup({
+    on_attach = on_attach,
+    capabilities = require("byut.defaults.lsp").capabilities(),
+})
 
 -- this one has to be installed manually
 conform.formatters_by_ft.rust = { "rustfmt" }
