@@ -10,4 +10,4 @@ lspconfig["intelephense"].setup({
     end,
 })
 
-conform.formatters_by_ft.php = { "php-cs-fixer" }
+conform.formatters_by_ft.php = { "php_cs_fixer" }
