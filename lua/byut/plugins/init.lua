@@ -15,7 +15,6 @@ local config = { ui = { border = "single" } }
 local plugins = {
     require("byut.plugins.cmp"),
     require("byut.plugins.luasnip"),
-    require("byut.plugins.mason"),
     require("byut.plugins.conform"),
     require("byut.plugins.lspconfig"),
     require("byut.plugins.nvim-jdtls"),
