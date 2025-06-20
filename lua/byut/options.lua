@@ -8,7 +8,8 @@
 vim.opt.exrc = true
 
 vim.opt.belloff = "all"
-vim.opt.clipboard = "unnamed,unnamedplus"
+
+-- vim.opt.clipboard = "unnamed,unnamedplus"
 vim.opt.syntax = "on"
 
 vim.opt.spell = false
