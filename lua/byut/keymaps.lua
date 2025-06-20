@@ -22,8 +22,8 @@ vim.g.mapleader = " "
 -- vnoremap <leader>P "+P
 
 -- Copy & Paste from OS clipboard
-keymap("n", "<leader>y", '"+y', opts)
-keymap("n", "<leader>p", '"+p', opts)
+keymap({ "n", "v" }, "<leader>y", '"+y', opts)
+keymap({ "n", "v" }, "<leader>p", '"+p', opts)
 
 keymap("n", "<leader>eo", ":Explore<CR>", opts)
 
