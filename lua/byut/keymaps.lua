@@ -9,6 +9,22 @@ local keymap = vim.keymap.set
 vim.g.timeoutlen = 500
 vim.g.mapleader = " "
 
+-- Copy to clipboard
+-- vnoremap  <leader>y  "+y
+-- nnoremap  <leader>Y  "+yg_
+-- nnoremap  <leader>y  "+y
+-- nnoremap  <leader>yy  "+yy
+--
+-- Paste from clipboard
+-- nnoremap <leader>p "+p
+-- nnoremap <leader>P "+P
+-- vnoremap <leader>p "+p
+-- vnoremap <leader>P "+P
+
+-- Copy & Paste from OS clipboard
+keymap("n", "<leader>y", '"+y', opts)
+keymap("n", "<leader>p", '"+p', opts)
+
 keymap("n", "<leader>eo", ":Explore<CR>", opts)
 
 keymap("n", "<leader>qo", ":bot copen<CR>", opts)
