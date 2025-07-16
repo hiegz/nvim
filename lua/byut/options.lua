@@ -65,3 +65,12 @@ vim.opt.smarttab = true
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
+
+-- use the default internal neovim formatter
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.bo.formatprg = ""
+        vim.bo.formatexpr = ""
+    end,
+})
