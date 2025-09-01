@@ -7,3 +7,11 @@ lspconfig["html"].setup({
 })
 
 conform.formatters_by_ft.html = { "prettierd", "prettier" }
+
+-- Treat Handlebars files as HTML
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = { "*.hbs", "*.handlebars" },
+    callback = function()
+        vim.bo.filetype = "html"
+    end,
+})
