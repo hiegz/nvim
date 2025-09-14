@@ -9,3 +9,5 @@ lspconfig["ts_ls"].setup({
 
 conform.formatters_by_ft.javascript = { "prettierd", "prettier" }
 conform.formatters_by_ft.typescript = { "prettierd", "prettier" }
+conform.formatters_by_ft.javascriptreact = { "prettierd", "prettier" }
+conform.formatters_by_ft.typescriptreact = { "prettierd", "prettier" }
