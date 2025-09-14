@@ -4,6 +4,7 @@ return {
     config = function()
         require("cord").setup({
             editor = { client = "neovim" },
+            display = { view = "asset" },
         })
     end,
 }
