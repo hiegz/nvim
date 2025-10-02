@@ -1,5 +1,4 @@
 local nvim_jdtls = require("jdtls")
-local conform = require("conform")
 
 local function setup_jdtls()
     local root_files = {
@@ -12,7 +11,7 @@ local function setup_jdtls()
 
     nvim_jdtls.start_or_attach({
         cmd = { "/usr/bin/jdtls" },
-        settings = require("hiegz.languages.java.settings"),
+        settings = require("hiegz.lsp.jdtls.settings"),
         on_attach = require("hiegz.defaults.lsp").on_attach,
         capabilities = require("hiegz.defaults.lsp").capabilities(),
         root_dir = nvim_jdtls.setup.find_root(root_files),
@@ -24,4 +23,3 @@ vim.api.nvim_create_autocmd("FileType", {
     desc = "Setup jdtls",
     callback = setup_jdtls,
 })
-conform.formatters_by_ft["java"] = { lsp_format = "fallback" }
