@@ -12,9 +12,9 @@ local function setup_jdtls()
 
     nvim_jdtls.start_or_attach({
         cmd = { "/usr/bin/jdtls" },
-        settings = require("byut.languages.java.settings"),
-        on_attach = require("byut.defaults.lsp").on_attach,
-        capabilities = require("byut.defaults.lsp").capabilities(),
+        settings = require("hiegz.languages.java.settings"),
+        on_attach = require("hiegz.defaults.lsp").on_attach,
+        capabilities = require("hiegz.defaults.lsp").capabilities(),
         root_dir = nvim_jdtls.setup.find_root(root_files),
     })
 end
