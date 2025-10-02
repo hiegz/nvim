@@ -19,12 +19,12 @@ local function on_attach(client, bufnr)
         end
     end
 
-    require("byut.defaults.lsp").on_attach(client, bufnr)
+    require("hiegz.defaults.lsp").on_attach(client, bufnr)
 end
 
 lspconfig["rust_analyzer"].setup({
     on_attach = on_attach,
-    capabilities = require("byut.defaults.lsp").capabilities(),
+    capabilities = require("hiegz.defaults.lsp").capabilities(),
 })
 
 -- this one has to be installed manually

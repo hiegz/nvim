@@ -13,15 +13,15 @@ end
 
 local config = { ui = { border = "single" } }
 local plugins = {
-    require("byut.plugins.cmp"),
-    require("byut.plugins.luasnip"),
-    require("byut.plugins.conform"),
-    require("byut.plugins.lspconfig"),
-    require("byut.plugins.nvim-jdtls"),
-    require("byut.plugins.telescope"),
-    require("byut.plugins.vimtex"),
-    require("byut.plugins.cord"),
-    require("byut.plugins.everforest"),
+    require("hiegz.plugins.cmp"),
+    require("hiegz.plugins.luasnip"),
+    require("hiegz.plugins.conform"),
+    require("hiegz.plugins.lspconfig"),
+    require("hiegz.plugins.nvim-jdtls"),
+    require("hiegz.plugins.telescope"),
+    require("hiegz.plugins.vimtex"),
+    require("hiegz.plugins.cord"),
+    require("hiegz.plugins.everforest"),
 }
 
 vim.opt.rtp:prepend(lazypath)
