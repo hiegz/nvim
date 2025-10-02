@@ -1,7 +1,4 @@
-local lspconfig = require("lspconfig")
-local conform = require("conform")
-
-lspconfig["intelephense"].setup({
+vim.lsp.config("intelephense", {
     on_attach = require("hiegz.defaults.lsp").on_attach,
     capabilities = require("hiegz.defaults.lsp").capabilities(),
     root_dir = function(pattern)
@@ -10,4 +7,4 @@ lspconfig["intelephense"].setup({
     end,
 })
 
-conform.formatters_by_ft.php = { "php_cs_fixer" }
+vim.lsp.enable("intelephense")

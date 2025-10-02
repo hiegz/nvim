@@ -1,6 +1,3 @@
-local lspconfig = require("lspconfig")
-local conform = require("conform")
-
 local function on_attach(client, bufnr)
     -- Ignore the ServerCancelled error from rust_analyzer
     for _, method in ipairs({
@@ -22,10 +19,9 @@ local function on_attach(client, bufnr)
     require("hiegz.defaults.lsp").on_attach(client, bufnr)
 end
 
-lspconfig["rust_analyzer"].setup({
+vim.lsp.config("rust_analyzer", {
     on_attach = on_attach,
     capabilities = require("hiegz.defaults.lsp").capabilities(),
 })
 
--- this one has to be installed manually
-conform.formatters_by_ft.rust = { "rustfmt" }
+vim.lsp.enable("rust_analyzer")
