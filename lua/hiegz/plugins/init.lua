@@ -22,6 +22,7 @@ local plugins = {
     require("hiegz.plugins.vimtex"),
     require("hiegz.plugins.cord"),
     require("hiegz.plugins.everforest"),
+    require("hiegz.plugins.typst-preview"),
 }
 
 vim.opt.rtp:prepend(lazypath)
