@@ -9,6 +9,7 @@ return {
             },
         })
 
+        conform.formatters_by_ft.typst = { lsp_fallback = "fallback" }
         conform.formatters_by_ft.sh = { "shfmt" }
         conform.formatters_by_ft.c = { "clang-format" }
         conform.formatters_by_ft.cpp = { "clang-format" }
