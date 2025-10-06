@@ -3,6 +3,6 @@ return {
     formatterIndentSize = 4,
     formatterPrintWidth = 80,
     formatterProseWrap = true,
-    exportPdf = "onType",
+    exportPdf = "onSave",
     semanticTokens = "disable",
 }
