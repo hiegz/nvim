@@ -66,6 +66,8 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+vim.opt.completeopt = "menu,preview,menuone,noselect"
+
 -- use the default internal neovim formatter
 vim.api.nvim_create_autocmd("FileType", {
     pattern = "*",
