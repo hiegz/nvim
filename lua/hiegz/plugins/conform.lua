@@ -14,6 +14,7 @@ return {
         conform.formatters_by_ft.c = { "clang-format" }
         conform.formatters_by_ft.cpp = { "clang-format" }
         conform.formatters_by_ft.css = { "prettierd", "prettier" }
+        conform.formatters_by_ft.go = { "gofmt" }
         conform.formatters_by_ft.html = { "prettierd", "prettier" }
         conform.formatters_by_ft.java = { lsp_format = "fallback" }
         conform.formatters_by_ft.javascript = { "prettierd", "prettier" }
