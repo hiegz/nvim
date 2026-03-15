@@ -6,7 +6,15 @@ return {
             editor = { client = "neovim" },
             display = { view = "asset" },
             idle = { enabled = false },
-            plugins = { "cord.plugins.persistent_timer" },
+            extensions = {
+                persistent_timer = {
+                    scope = "workspace",
+                    mode = "all",
+                    file = vim.fn.stdpath "data" .. "/cord/extensions/persistent_timer/data.json",
+                    save_on = { "exit", "focus_change", "periodic" },
+                    save_interval = 30,
+                },
+            },
         })
     end,
 }
