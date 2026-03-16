@@ -66,6 +66,16 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "sass", "scss" },
+    callback = function()
+        vim.opt_local.tabstop = 4
+        vim.opt_local.softtabstop = 4
+        vim.opt_local.shiftwidth = 4
+        -- vim.opt_local.expandtab = true
+    end,
+})
+
 vim.opt.completeopt = "menu,preview,menuone,noselect"
 
 -- use the default internal neovim formatter
