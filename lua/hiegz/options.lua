@@ -66,6 +66,14 @@ vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
+-- enable autocomment
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.opt_local.formatoptions:append("cro")
+    end
+})
+
 vim.api.nvim_create_autocmd("FileType", {
     pattern = { "sass", "scss" },
     callback = function()
