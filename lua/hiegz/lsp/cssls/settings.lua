@@ -1,6 +1,9 @@
 return {
     css = {
         validate = true,
+        lint = {
+            unknownAtRules = "ignore",
+        },
     },
     less = {
         validate = true,
